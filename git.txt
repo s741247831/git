@@ -1,0 +1,68 @@
+
+git总结：
+	（上传）
+	创建github 命令  ssh-keygen -t rsa -C “741247831@qq.com”
+	连接github 命令	 Ssh -T git@github.com
+
+	测试是否可以上传
+	echo "# sunsaisai" >> README.md		（创建一个文件）
+	git init		（初始化git仓库）
+	git add README.md	（加入暂存区）
+	git commit -m "first commit"	（存入本地git仓库）
+	git remote add origin https://github.com/s741247831/sunsaisai.git	连接github
+	git push -u origin master	（上传到github中）
+
+	（克隆到本地）
+	git clone  https://github.com/s741247831/sunsaisai.git(需要克隆的库的地址)
+
+	
+	（标签）
+	git tag  (查看当前库的所有标签)
+	git tag name标签名（创建标签）
+	指定提交信息  git tag -a name -m “comment”
+	git tag -d name   (删除标签-》删除本地 已上传的不可以删除)
+	git push origin name  （标签上传）
+
+
+	(分支管理)
+	git branch （查看分支）
+	git branch name (创建分支)
+	git checkout name （切换分支  默认分支master）
+	git merge name(合并分支)
+	git branch -d name （删除分支）
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo "# sunsaisai" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/s741247831/sunsaisai.git
+git push -u origin master
